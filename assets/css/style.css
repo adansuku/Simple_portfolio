@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #151515;
+    font-family: 'PT Mono', monospace;
+}
+
+nav {
+    padding: 1.5rem 2rem;
+}
+
+.logo {
+    float: left;
+    padding: .5rem;
+    margin-left: 1rem;
+    margin-top: .5rem;
+}
+
+.logo a {
+    font-size: 2.5rem;
+    letter-spacing: 0px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-top: 1rem;
+}
+
+nav ul li:not(:first-child) {
+    margin-left: 48px;
+}
+
+nav ul li:last-child {
+    margin-right: 24px;
+}
+
+nav ul li a {
+    display: inline-block;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.6rem;
+    letter-spacing: 1.2px;
+}
+
+
+/* menu animation */
+
+#nav:checked+.nav-btn i {
+    background: #000;
+    transition: transform 0.2s ease;
+}
+
+#nav:checked+.nav-btn i:nth-child(1) {
+    transform: translateY(5px) rotate(-135deg);
+}
+
+#nav:checked+.nav-btn i:nth-child(2) {
+    transform: translateY(-6px) rotate(135deg);
+}
+
+#nav:checked~.nav-wrapper {
+    z-index: 9990;
+    opacity: 1;
+}
+
+#nav:checked~.nav-wrapper ul li a {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hidden {
+    display: none;
+}

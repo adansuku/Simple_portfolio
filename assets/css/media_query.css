@@ -35,7 +35,65 @@
     ##Screen = B/w 481px to 767px
   */
 
-@media (min-width: 481px) and (max-width: 767px) {}
+@media (min-width: 481px) and (max-width: 767px) {
+    .logo {
+        padding: 0;
+    }
+    .nav-wrapper {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        z-index: -1;
+        background: #fff;
+        opacity: 0;
+    }
+    .nav-wrapper ul {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        padding-right: 2rem;
+    }
+    .nav-wrapper ul li {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+    .nav-wrapper ul li:not(:first-child) {
+        margin-left: 0;
+    }
+    .nav-wrapper ul li a {
+        padding: 10px 24px;
+        opacity: 0;
+        color: #000;
+        font-size: 18px;
+        letter-spacing: 1.2px;
+        transition: all 0.2s ease;
+    }
+    .nav-btn {
+        position: fixed;
+        right: 3rem;
+        display: block;
+        cursor: pointer;
+        z-index: 9998;
+    }
+    .nav-btn i {
+        display: block;
+        width: 25px;
+        height: 4px;
+        background: #fff;
+    }
+    .nav-btn i:nth-child(1) {
+        margin-top: 12px;
+    }
+    .nav-btn i:nth-child(2) {
+        margin-top: 7px;
+    }
+}
 
 
 /* 
@@ -43,4 +101,8 @@
     ##Screen = B/w 320px to 479px
   */
 
-@media (min-width: 320px) and (max-width: 480px) {}
+@media (min-width: 320px) and (max-width: 480px) {
+    .nav-wrapper {
+        width: 100%;
+    }
+}
