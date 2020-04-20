@@ -1,0 +1,26 @@
+:root {
+    --white: #fff;
+    --black: #000;
+}
+
+.vertical_align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.black_bg {
+    background: var(--black);
+}
+
+.black {
+    color: var(--black);
+}
+
+.white_bg {
+    background: var(--white);
+}
+
+.white {
+    color: var(--white);
+}
