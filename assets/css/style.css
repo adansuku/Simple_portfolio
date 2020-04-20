@@ -17,13 +17,30 @@ body {
 
 main {
     width: 100%;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 120px);
+    padding: 20px;
 }
 
-.home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+
+/*
+## Header
+*/
+
+header {
+    height: 70px;
 }
 
 nav {
@@ -75,6 +92,11 @@ nav ul li a {
     display: none;
 }
 
+
+/* 
+## Home
+*/
+
 .home_title h1 {
     color: #fff;
     font-family: monospace;
@@ -84,4 +106,32 @@ nav ul li a {
     margin: 0 auto;
     letter-spacing: .15em;
     animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+
+/*
+## About
+*/
+
+.about {
+    background: white;
+    color: black;
+    max-width: 500px;
+}
+
+.about img {
+    margin-bottom: 20px;
+}
+
+
+/*
+## Foooter
+*/
+
+footer {
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    height: 50px;
 }
